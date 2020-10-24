@@ -62,9 +62,15 @@ app.post("/add",upload.single('icon'),(req,res)=>{
         icon
     });
     if(result){
-        res.send("添加成功");
+        res.send({
+            code:200,
+            msg:"添加成功"
+        });
     }else{
-        res.send("添加失败");
+        res.send({
+            code:404,
+            msg:"添加失败"
+        });
     }
 })
 
@@ -74,9 +80,15 @@ app.get("/delete",(req,res)=>{
     let {id} = req.query;
     const result4 = db.deleHeroById(id);
     if(result4){
-        res.send("删除成功");
+        res.send({
+            code:200,
+            msg:"删除成功"
+        });
     }else{
-        res.send("删除失败");
+        res.send({
+            code:404,
+            msg:"删除失败"
+        });
     }
 });
 
@@ -90,7 +102,7 @@ app.get("/getHeroById",(req,res)=>{
 });
 
 // 6.编辑英雄
-app.post("/edit",upload.single("icon"),(req,res)=>{
+app.post("edit",upload.single("icon"),(req,res)=>{
     // 获取前台传来的文本参数
     let {id,name,skill} = req.body;
     // 获取前台传来的文件
@@ -102,9 +114,15 @@ app.post("/edit",upload.single("icon"),(req,res)=>{
         icon
     });
     if(result6){
-        res.send("修改成功");
+        res.send({
+            code:200,
+            msg:"修改成功"
+        });
     }else{
-        res.send("修改失败");
+        res.send({
+            code:404,
+            msg:"修改失败"
+        });
     }
 
 });

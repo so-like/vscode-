@@ -32,6 +32,13 @@
         "name": "老鼠啊",
         "skill": "偷吃",
         "icon": "bfdce75153336a63c7c696b25b1357f8",
+        "isDelete": true
+    },
+    {
+        "id": 6,
+        "name": "皇子",
+        "skill": "盖饭",
+        "icon": "f9f825b65ba11f7ef0a70be70871e34f",
         "isDelete": false
     }
 ]
