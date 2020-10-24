@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app" >
+        {{msg}}
+        <button @click="changemsg">点击更换</button>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                msg:"我是蜘蛛",
+            },
+            methods: {
+                changemsg(){
+                    this.msg = "猪";
+                }
+            },
+        });
+    </script>
+</body>
+</html>

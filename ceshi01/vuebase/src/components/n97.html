@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var btn = document.getElementById("btn");
+//				btn.onclick = function(){
+//					alert(1)
+//				};
+//				通过这种对象.事件名  = 函数 的形式每次只能给事件绑定一个,因为后边的会覆盖前边
+//				btn.onclick = function(){
+//					alert(2)
+//				}
+//				通过添加事件监听器来为一个对象添加多个绑定事件,而事件监听器中有三个参数
+//				第一个为事件字符串,不要on
+//				第二个为事件响应函数
+//				第三个为是否在捕获阶段触发,其传值为false\n
+//				该方法不支持ie8
+//				btn.addEventListener("click",function(){
+//					alert(1);
+//				},false);
+//				btn.addEventListener("click",function(){
+//					alert(2);
+//				},false);
+				
+//				在ie8中可以使用attchevent
+				btn.attachEvent("onclick",function(){
+					alert("ie8");
+//					两个参数,第一个为事件字符串,要加on
+//					第二个参数为事件响应函数
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<button id="btn">按钮</button>
+	</body>
+</html>

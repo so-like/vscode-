@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    // <!-- 函数也是对象万物皆对象 -->
+    // <!-- 函数可以封装一些功能和代码 -->
+    // 构造函数
+    var fun = new Function("console.log('hello你好');");
+    // fun();
+
+// 函数对象具有所有普通对象的功能它比普通对象更强大
+    // fun.hello = "ssw";
+    // console.log(fun.hello);
+    // function 函数名([形参1，形参2，.....形参n]){
+    //     函数体
+    // }
+    function person(){
+        console.log("这是我的第一个函数")
+        console.log(person)
+
+    }
+    person();
+
+    var fun3 = function(){
+        console.log("匿名函数")
+    };
+    
+    </script>
+    
+
+    
+</head>
+<body>
+    
+</body>
+</html>

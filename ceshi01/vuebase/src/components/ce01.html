@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100以内质数</title>
+    <script>
+        //计时器名为p2p
+        console.time("p2p")
+        for(var i=2;i<=100;i++){
+            //遍历2到100数字
+            Flag = true;
+            // Math.sqrt(i)为给i开根号
+            for(var j=2;j<Math.sqrt(i);j++){
+                if(i%j ==0){
+                    Flag = false
+                   
+                    break
+                }
+            }
+            if(Flag){
+            console.log(i)
+        }
+       
+        }
+        console.timeEnd("p2p")
+        
+       
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

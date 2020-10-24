@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var a = 5;
+			function fun(){
+				console.log("内部函数作用域");
+				function fun1(){
+					console.log("a ="+a)
+				}
+				fun1();
+			}
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
