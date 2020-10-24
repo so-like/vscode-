@@ -10,6 +10,9 @@ const db = require(path.join(__dirname,'utils','db.js'));
 
 const app = express();
 
+// 将我们的服务器设置为静态资源暴露给外部使得外部可以访问
+app.use(express.static('www'));
+
 
 
 // 创建一个文件夹用来存放英雄头像
